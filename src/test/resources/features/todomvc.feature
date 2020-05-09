@@ -1,13 +1,95 @@
 Feature: TODO MVC Functional Test cases
-
-     Background: User is on todo page 
-     	 	Given I am on "TodoMVC" page
-      	When I click on "Backbone.js" element
-      	Then I am on "Backbone.js" page
-      	And I should see "Backbone.js" header
-      
       
      # Our Scenarios will begin from here. 
-		 @test1
-     Scenario: UI Test
-    		
+#		  @test1
+      #Scenario: Verify Toggle All Functionality
+   #		Given I launch "http://www.todomvc.com/examples/backbone/" page
+#			When I enter "10" entries
+#			Then I should see the count "10"
+#			When I click Toggle All CTA
+#			Then I should see all entries Striked out
+#			And I should see the count "0"
+#			When I clear completed
+#			Then I should not see entries
+#			And I close Browser
+#			
+#			@test1
+#		  Scenario: Verify Toggle All Functionality2
+#		  Given I launch "http://www.todomvc.com/examples/backbone/" page
+   #		When I enter "10" entries
+   #		And I navigate to Active tab
+   #		Then I should see all entries
+   #		And I should see the count "10"
+   #		When I navigate to Completed tab
+   #		Then I should see the count "10"
+   #		And I should not see entries
+   #		And I close Browser
+   #		
+   #		@test1
+   #		Scenario: Verify Completed Filter tab
+#		  Given I launch "http://www.todomvc.com/examples/backbone/" page
+   #		When I enter "10" entries
+   #		And I navigate to Completed tab
+   #		Then I should not see entries
+   #		And I should see the count "10"
+   #		When I navigate to Active tab
+   #		Then I should see the count "10"
+   #		And I should see all entries
+   #		And I close Browser
+   #		
+   #		@test1
+   #		Scenario: Verify Completed Filter tab
+#		  Given I launch "http://www.todomvc.com/examples/backbone/" page
+   #		When I enter "50" entries
+   #		Then I verify every prime element is striked out of "50" entries
+   #		And I close Browser
+   #			
+   #		@test1
+   #		Scenario: Verify editable entry
+#		  Given I launch "http://www.todomvc.com/examples/backbone/" page
+   #		When I enter "1" entries
+   #		Then I verify entry is editable
+   #		And I close Browser
+
+			@test1
+   		Scenario: Verify Destroy CTA
+		  Given I launch "http://www.todomvc.com/examples/backbone/" page
+   		When I enter "2" entries
+   		Then I verify destroy CTA
+   		And I close Browser
+   		
+   		@test1
+      Scenario: Verify we can add 100 entries
+   		Given I launch "http://www.todomvc.com/examples/backbone/" page
+			When I enter "100" entries
+			Then I should see the count "100"
+			And I close Browser
+			
+			@test1
+      Scenario: Verify spaces in text
+   		Given I launch "http://www.todomvc.com/examples/backbone/" page
+			When I enter "test             2345" text
+			Then I should see "test 2345" text
+			And I close Browser
+			
+			@test1
+			Scenario: Verify length of todo text
+			Given I launch "http://www.todomvc.com/examples/backbone/" page
+			When I enter text for "50" seconds and verify
+			Then I close Browser
+
+#		  @test1
+      #Scenario: Verify Links should open on same page
+   #		Given I launch "http://www.todomvc.com/examples/backbone/" page
+#			When I click the link "TodoMVC"
+#			Then I should see page "TodoMVC" on same tab
+#			When I navigate to Back
+#			And  I click the link "let us know"
+#			Then I should see page "Issues" on same tab
+#			When I navigate to Back
+#			And  I click the link "Addy Osmani" on new tab
+#			Then I should see page "addyosmani" on new tab
+#			When I click the link "Backbone.js" for different window
+#			Then I should see page "Backbone.js" on different window
+#			And I quit Browser
+			

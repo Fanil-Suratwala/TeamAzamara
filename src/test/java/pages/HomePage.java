@@ -5,19 +5,22 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-public class HomePage {
+import main.CucumberRunner;
+
+public class HomePage extends CucumberRunner{
 
 	private WebDriver driver;
 	
     String elementXpath="//a[.='element']";
     
-	public HomePage(WebDriver driver){
-		this.driver = driver;
+	public HomePage(){
+		this.driver = CucumberRunner.driver;
 		PageFactory.initElements(driver, this);
 	}
 	
           
-    public void clickOnElement(String elementName){
+    public LanguagePage selectLanguage(String elementName){
     	driver.findElement(By.xpath(elementXpath.replace("element", elementName))).click();
+    	return new LanguagePage();
     }
 }
