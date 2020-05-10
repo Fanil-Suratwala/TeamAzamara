@@ -61,22 +61,22 @@ Feature: TODO MVC Functional Test cases
    		@test1
       Scenario: Verify we can add 100 entries
    		Given I launch "http://www.todomvc.com/examples/backbone/" page
-			When I enter "100" entries
-			Then I should see the count "100"
+			When I enter "50" entries
+			Then I should see the count "50"
 			And I close Browser
 			
-			@test1
-      Scenario: Verify spaces in text
-   		Given I launch "http://www.todomvc.com/examples/backbone/" page
-			When I enter "test             2345" text
-			Then I should see "test 2345" text
-			And I close Browser
-			
-			@test1
-			Scenario: Verify length of todo text
-			Given I launch "http://www.todomvc.com/examples/backbone/" page
-			When I enter text for "50" seconds and verify
-			Then I close Browser
+#			@test1
+      #Scenario: Verify spaces in text
+   #		Given I launch "http://www.todomvc.com/examples/backbone/" page
+#			When I enter "test             2345" text
+#			Then I should see "test 2345" text
+#			And I close Browser
+#			
+#			@test1
+#			Scenario: Verify length of todo text
+#			Given I launch "http://www.todomvc.com/examples/backbone/" page
+#			When I enter text for "50" seconds and verify
+#			Then I close Browser
 
 #		  @test1
       #Scenario: Verify Links should open on same page

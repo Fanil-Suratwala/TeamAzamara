@@ -178,7 +178,7 @@ public class LanguagePage extends CucumberRunner{
 	}
 	
 	public void closeBrowser(){
-		driver.close();
+//		driver.close();
 	}
 	
 	public void quit(){
