@@ -66,10 +66,12 @@ public class LanguagePage extends CucumberRunner{
 	}
 	
 	public void verifyHeader(String headerName){
+		log.info("Asserting the header");
 		Assert.assertEquals(pageHeader.getText().trim(), headerName.trim());
     }
 
 	public void addEntries(int num) {
+		log.info("Adding "+num+" entries");
 		for(int i=0;i<num;i++){
 			todoPlaceholder.sendKeys(generateRandomString(10)+Keys.ENTER);
 		}
@@ -77,15 +79,18 @@ public class LanguagePage extends CucumberRunner{
 	}
 	
 	public void verifyEntryCount(int num){
+		log.info("verifying "+num+" entries");
 		Assert.assertTrue(num==Integer.parseInt(todoCount.getText()));
 	}
 	
 	
 	public void clickToggleAllCTA(){
+		log.info("clicking Toggle all button");
 		toggleAllCTA.click();
 	}
 	
 	public void verifyToggleAll(){
+		log.info("verifying all entries toggled");
 		for(WebElement element:todoList){
 			Assert.assertTrue(element.getCssValue("text-decoration-line").equals("line-through"));
 		}
@@ -104,6 +109,7 @@ public class LanguagePage extends CucumberRunner{
 	}
 
 	public void navigateToTab(String tabName) {
+		log.info("Navigating to "+tabName+"");
 		if(tabName.equals("Back"))
 			driver.navigate().back();
 		else{
@@ -114,11 +120,14 @@ public class LanguagePage extends CucumberRunner{
 
 	
 	public void verifyEntries(){
+		log.info("verifying entries");
 		elementsList.equals(todoList);
 	}
 	
 	
-	public void verifyEntriesAreHidden() {
+	public void verifyEntriesAreHidden() throws InterruptedException {
+		log.info("verifying entries are hidden");
+		Thread.sleep(2000);
 		for(WebElement wb:hiddenElementList){
 			Assert.assertFalse(wb.isDisplayed());
 		}
@@ -126,11 +135,12 @@ public class LanguagePage extends CucumberRunner{
 	}
 	
 	public void clearCompleted(){
+		log.info("Clicking on clear completed button");
 		clearCompletedCTA.click();
 	}
 	
 	public void strikePrimeElement(int num){
-		
+		log.info("Striking prime elements from list");
 		boolean flag=false;
 		for(int i=2;i<num;i++){
 			for(int j=2;j<i;j++){
@@ -146,7 +156,7 @@ public class LanguagePage extends CucumberRunner{
 				toggleCTA.get(i-1).click();
 			}
 		}
-		
+		log.info("verifying prime entries are striked out");
 		boolean flag2=false;
 		for(int i=2;i<num;i++){
 			for(int j=2;j<i;j++){
@@ -186,6 +196,7 @@ public class LanguagePage extends CucumberRunner{
 	}
 
 	public void verifyDestroyCTA() {
+		log.info("Verifying destroy CTA");
 		List<WebElement> entries=new ArrayList<WebElement>();
 		entries=driver.findElements(By.xpath("//ul[@class='todo-list']//label"));
 		Actions act=new Actions(driver);
@@ -196,6 +207,7 @@ public class LanguagePage extends CucumberRunner{
 	}
 
 	public void enterText(String text) {
+		log.info("entering text");
 		todoPlaceholder.sendKeys(text+Keys.ENTER);
 	}
 	
@@ -206,8 +218,10 @@ public class LanguagePage extends CucumberRunner{
 	}
 
 	public void entertextminutes(int time) {
+		
 		long finish = System.currentTimeMillis() + (time*1000); 
 		String s="";
+		log.info("Entering text for "+time+" seconds");
 		while (System.currentTimeMillis() < finish) {
 			String c=generateRandomString(1);
 		    todoPlaceholder.sendKeys(c);
@@ -218,6 +232,7 @@ public class LanguagePage extends CucumberRunner{
 	}
 
 	public void clickLink(String link) {
+		log.info("clicking on link : "+link);
 		set.addAll(driver.getWindowHandles());
 		windowCount=set.size();
 		WebElement element = driver.findElement(By.xpath("//a[.='"+link+"']"));
@@ -227,37 +242,39 @@ public class LanguagePage extends CucumberRunner{
 	}
 	
 	public void verifyPage(String pageName){
-//		Set<String> currentSet=new HashSet<String>();
-//		currentSet.addAll(driver.getWindowHandles());
-//		switch(pageName){
-//		case "TodoMVC":
-//			Assert.assertTrue(windowCount==set.size());
-//			Assert.assertEquals(currentSet, set);
-//			Assert.assertEquals(driver.getTitle(), pageName);
-//			Assert.assertTrue(driver.getCurrentUrl().contains(pageName.toLowerCase()));
-//			break;
-//		case "let us know":	
-//			Assert.assertTrue(windowCount==set.size());
-//			Assert.assertEquals(currentSet, set);	
-//			Assert.assertTrue(driver.getTitle().contains(pageName));
-//			Assert.assertTrue(driver.getCurrentUrl().contains("github"));
-//			break;
-//		case "backbone.js":
-//			Assert.assertTrue(driver.getTitle().contains(pageName));
-//			Assert.assertTrue(driver.getCurrentUrl().contains("backbone"));
-//			driver.close();
-//			driver.switchTo().window(tabs.get(0));
-//			break;
-//		case "addyosmani":
-//			Assert.assertTrue(driver.getTitle().contains(pageName));
-//			Assert.assertTrue(driver.getCurrentUrl().contains("github"));
-//			driver.close();
-//			driver.switchTo().window(tabs.get(0));
-//			break;
-//		}
+		log.info("verifying page "+pageName);
+		Set<String> currentSet=new HashSet<String>();
+		currentSet.addAll(driver.getWindowHandles());
+		switch(pageName){
+		case "TodoMVC":
+			Assert.assertTrue(windowCount==set.size());
+			Assert.assertEquals(currentSet, set);
+			Assert.assertEquals(driver.getTitle(), pageName);
+			Assert.assertTrue(driver.getCurrentUrl().contains(pageName.toLowerCase()));
+			break;
+		case "let us know":	
+			Assert.assertTrue(windowCount==set.size());
+			Assert.assertEquals(currentSet, set);	
+			Assert.assertTrue(driver.getTitle().contains(pageName));
+			Assert.assertTrue(driver.getCurrentUrl().contains("github"));
+			break;
+		case "backbone.js":
+			Assert.assertTrue(driver.getTitle().contains(pageName));
+			Assert.assertTrue(driver.getCurrentUrl().contains("backbone"));
+			driver.close();
+			driver.switchTo().window(tabs.get(0));
+			break;
+		case "addyosmani":
+			Assert.assertTrue(driver.getTitle().contains(pageName));
+			Assert.assertTrue(driver.getCurrentUrl().contains("github"));
+			driver.close();
+			driver.switchTo().window(tabs.get(0));
+			break;
+		}
 	}
 
 	public void clickLinkNewTab(String link) throws InterruptedException, AWTException {
+		log.info("opening link in new tab");
 		Robot robot = new Robot();
 		explicitWait(driver.findElement(By.xpath("//a[.='"+link+"']")));
 		Actions act=new Actions(driver);
@@ -271,6 +288,7 @@ public class LanguagePage extends CucumberRunner{
 	}
 
 	public void clickForDifferentWindow(String link) throws InterruptedException, AWTException {
+		log.info("opening link in new window");
 		Robot robot = new Robot();              
 		Actions act=new Actions(driver);
 		Thread.sleep(2000);

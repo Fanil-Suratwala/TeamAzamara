@@ -1,6 +1,7 @@
 package main;
 
 import java.io.File;
+
 import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -8,6 +9,8 @@ import java.util.Calendar;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -24,12 +27,14 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-@CucumberOptions(strict = true, monochrome = true, features = "src/test/resources/features", glue = {"stepdefinition","main"}, format = {"pretty","json:target/cucumber.json"}, tags = { "@test1" })
 
-public class CucumberRunner extends AbstractTestNGCucumberTests {
+@CucumberOptions(strict = true, monochrome = true, features = "src/test/resources/features",plugin={"html:target/cucumber-html-report"} ,glue = {"stepdefinition","main"}, format = {"pretty","json:target/cucumber.json"}, tags = { "@test1" })
+
+public class CucumberRunner extends AbstractTestNGCucumberTests{
 
 	public static Properties config = null;
 	public static WebDriver driver = null;
+	public static Logger log = LogManager.getLogger(CucumberRunner.class);
 	
 	@Before
 	public void setBrowser() throws Exception {	
@@ -69,29 +74,4 @@ public class CucumberRunner extends AbstractTestNGCucumberTests {
 		String cal1 = dateFormat.format(cal.getTime());
 		return cal1;
 	}
-
-//	@After
-//	public void takeScreenshot() throws IOException {
-//		System.out.println("In after class");
-//		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//		File trgtFile = new File(System.getProperty("user.dir") + "//screenshots/screenshot.png");
-//		trgtFile.getParentFile().mkdir();
-//		trgtFile.createNewFile();
-//		Files.copy(scrFile, trgtFile);
-//	}
-//
-//	@After
-//	public void tearDown(ITestResult result) throws IOException {
-//		System.out.println("In after method");
-//		if (!result.isSuccess()) {
-//			File imageFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-//			String failureImageFileName = result.getMethod().getMethodName()
-//					+ new SimpleDateFormat("MM-dd-yyyy_HH-ss").format(new GregorianCalendar().getTime()) + ".png";
-//			File failureImageFile = new File(System.getProperty("user.dir") + "//screenshots//" + failureImageFileName);
-//			failureImageFile.getParentFile().mkdir();
-//			failureImageFile.createNewFile();
-//			Files.copy(imageFile, failureImageFile);
-//		}
-//		
-//	}
 }

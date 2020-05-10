@@ -2,16 +2,16 @@ package stepdefinition;
 
 import java.awt.AWTException;
 
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import main.CucumberRunner;
 import pages.LanguagePage;
-import pages.HomePage;
+
 
 public class Common_Steps {
 	private CucumberRunner cucumberrunner;
-	private HomePage homepage;
 	private LanguagePage languagepage=new LanguagePage();
 	
 	@Given("^I am on \"(.*?)\" page$")
@@ -23,12 +23,6 @@ public class Common_Steps {
 	public void launchURL(String url)  {
 			cucumberrunner=new CucumberRunner();
 			cucumberrunner.launchURL(url);
-	}
-	
-	@When("I click on \"(.*?)\" element")
-	public void clickOnElement(String language){
-		homepage=new HomePage();
-		languagepage=homepage.selectLanguage(language);
 	}
 	
 	@Then("I should see \"(.*?)\" header")
@@ -66,9 +60,8 @@ public class Common_Steps {
 		languagepage.verifyEntries();
 	}
 	
-	
 	@Then("I should not see entries")
-	public void emptyList(){
+	public void emptyList() throws InterruptedException{
 		languagepage.verifyEntriesAreHidden();
 	}
 	
