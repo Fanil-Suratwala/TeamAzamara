@@ -61,6 +61,7 @@ public class LanguagePage extends CucumberRunner{
 	ArrayList<String> tabs;
 	
 	public LanguagePage(){
+		
 		this.driver = CucumberRunner.driver;
 		PageFactory.initElements(driver, this);
 	}

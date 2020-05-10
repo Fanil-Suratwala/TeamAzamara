@@ -33,7 +33,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 public class CucumberRunner extends AbstractTestNGCucumberTests{
 
 	public static Properties config = null;
-	public static WebDriver driver = null;
+	protected static WebDriver driver = null;
 	public static Logger log = LogManager.getLogger(CucumberRunner.class);
 	
 	@Before

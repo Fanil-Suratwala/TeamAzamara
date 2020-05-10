@@ -132,3 +132,116 @@
 [INFO ] 2020-05-10 14:37:57.834 [TestNG-tests-1] CucumberRunner - Adding 1 entries
 [INFO ] 2020-05-10 14:38:10.278 [TestNG-tests-1] CucumberRunner - Adding 2 entries
 [INFO ] 2020-05-10 14:38:10.484 [TestNG-tests-1] CucumberRunner - Verifying destroy CTA
+[INFO ] 2020-05-10 14:38:22.412 [TestNG-tests-1] CucumberRunner - Adding 50 entries
+[INFO ] 2020-05-10 14:38:26.026 [TestNG-tests-1] CucumberRunner - verifying 50 entries
+[INFO ] 2020-05-10 14:38:39.001 [TestNG-tests-1] CucumberRunner - entering text
+[INFO ] 2020-05-10 14:38:51.101 [TestNG-tests-1] CucumberRunner - Entering text for 50 seconds
+[INFO ] 2020-05-10 14:39:57.764 [TestNG-tests-1] CucumberRunner - clicking on link : TodoMVC
+[INFO ] 2020-05-10 14:40:05.221 [TestNG-tests-1] CucumberRunner - verifying page TodoMVC
+[INFO ] 2020-05-10 14:40:05.233 [TestNG-tests-1] CucumberRunner - Navigating to Back
+[INFO ] 2020-05-10 14:40:05.353 [TestNG-tests-1] CucumberRunner - clicking on link : let us know
+[INFO ] 2020-05-10 14:40:12.215 [TestNG-tests-1] CucumberRunner - verifying page Issues
+[INFO ] 2020-05-10 14:40:12.218 [TestNG-tests-1] CucumberRunner - Navigating to Back
+[INFO ] 2020-05-10 14:40:12.452 [TestNG-tests-1] CucumberRunner - opening link in new tab
+[INFO ] 2020-05-10 14:55:10.023 [TestNG-tests-1] CucumberRunner - Adding 10 entries
+[INFO ] 2020-05-10 14:55:10.923 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 14:55:10.955 [TestNG-tests-1] CucumberRunner - clicking Toggle all button
+[INFO ] 2020-05-10 14:55:11.027 [TestNG-tests-1] CucumberRunner - verifying all entries toggled
+[INFO ] 2020-05-10 14:55:11.167 [TestNG-tests-1] CucumberRunner - verifying 0 entries
+[INFO ] 2020-05-10 14:55:11.198 [TestNG-tests-1] CucumberRunner - verifying entries are hidden
+[INFO ] 2020-05-10 14:55:33.291 [TestNG-tests-1] CucumberRunner - Clicking on clear completed button
+[INFO ] 2020-05-10 14:55:45.236 [TestNG-tests-1] CucumberRunner - Adding 10 entries
+[INFO ] 2020-05-10 14:55:46.327 [TestNG-tests-1] CucumberRunner - Navigating to Active
+[INFO ] 2020-05-10 14:55:46.434 [TestNG-tests-1] CucumberRunner - verifying entries
+[INFO ] 2020-05-10 14:55:46.449 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 14:55:46.480 [TestNG-tests-1] CucumberRunner - Navigating to Completed
+[INFO ] 2020-05-10 14:55:46.592 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 14:55:46.615 [TestNG-tests-1] CucumberRunner - verifying entries are hidden
+[INFO ] 2020-05-10 14:56:00.492 [TestNG-tests-1] CucumberRunner - Adding 10 entries
+[INFO ] 2020-05-10 14:56:01.387 [TestNG-tests-1] CucumberRunner - Navigating to Completed
+[INFO ] 2020-05-10 14:56:01.491 [TestNG-tests-1] CucumberRunner - verifying entries are hidden
+[INFO ] 2020-05-10 14:56:03.687 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 14:56:03.710 [TestNG-tests-1] CucumberRunner - Navigating to Active
+[INFO ] 2020-05-10 14:56:03.831 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 14:56:03.859 [TestNG-tests-1] CucumberRunner - verifying entries
+[INFO ] 2020-05-10 14:56:16.549 [TestNG-tests-1] CucumberRunner - Adding 50 entries
+[INFO ] 2020-05-10 14:56:22.181 [TestNG-tests-1] CucumberRunner - Striking prime elements from list
+[INFO ] 2020-05-10 14:56:23.112 [TestNG-tests-1] CucumberRunner - verifying prime entries are striked out
+[INFO ] 2020-05-10 14:56:35.283 [TestNG-tests-1] CucumberRunner - Adding 1 entries
+[INFO ] 2020-05-10 14:56:47.730 [TestNG-tests-1] CucumberRunner - Adding 2 entries
+[INFO ] 2020-05-10 14:56:48.008 [TestNG-tests-1] CucumberRunner - Verifying destroy CTA
+[INFO ] 2020-05-10 14:57:02.029 [TestNG-tests-1] CucumberRunner - Adding 50 entries
+[INFO ] 2020-05-10 14:57:08.171 [TestNG-tests-1] CucumberRunner - verifying 50 entries
+[INFO ] 2020-05-10 14:57:20.151 [TestNG-tests-1] CucumberRunner - entering text
+[INFO ] 2020-05-10 14:57:32.150 [TestNG-tests-1] CucumberRunner - Entering text for 50 seconds
+[INFO ] 2020-05-10 14:58:35.215 [TestNG-tests-1] CucumberRunner - clicking on link : TodoMVC
+[INFO ] 2020-05-10 14:58:40.368 [TestNG-tests-1] CucumberRunner - verifying page TodoMVC
+[INFO ] 2020-05-10 14:58:40.389 [TestNG-tests-1] CucumberRunner - Navigating to Back
+[INFO ] 2020-05-10 14:58:40.589 [TestNG-tests-1] CucumberRunner - clicking on link : let us know
+[INFO ] 2020-05-10 14:58:42.206 [TestNG-tests-1] CucumberRunner - verifying page Issues
+[INFO ] 2020-05-10 14:58:42.210 [TestNG-tests-1] CucumberRunner - Navigating to Back
+[INFO ] 2020-05-10 14:58:42.538 [TestNG-tests-1] CucumberRunner - opening link in new tab
+[INFO ] 2020-05-10 14:58:44.715 [TestNG-tests-1] CucumberRunner - verifying page addyosmani
+[INFO ] 2020-05-10 14:58:48.869 [TestNG-tests-1] CucumberRunner - opening link in new window
+[INFO ] 2020-05-10 14:58:50.996 [TestNG-tests-1] CucumberRunner - verifying page Backbone.js
+[INFO ] 2020-05-10 18:31:38.173 [TestNG-tests-1] CucumberRunner - Adding 10 entries
+[INFO ] 2020-05-10 18:31:39.113 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 18:31:39.149 [TestNG-tests-1] CucumberRunner - clicking Toggle all button
+[INFO ] 2020-05-10 18:31:39.214 [TestNG-tests-1] CucumberRunner - verifying all entries toggled
+[INFO ] 2020-05-10 18:31:39.344 [TestNG-tests-1] CucumberRunner - verifying 0 entries
+[INFO ] 2020-05-10 18:31:39.371 [TestNG-tests-1] CucumberRunner - verifying entries are hidden
+[INFO ] 2020-05-10 18:32:01.452 [TestNG-tests-1] CucumberRunner - Clicking on clear completed button
+[INFO ] 2020-05-10 18:32:13.038 [TestNG-tests-1] CucumberRunner - Adding 10 entries
+[INFO ] 2020-05-10 18:32:13.893 [TestNG-tests-1] CucumberRunner - Navigating to Active
+[INFO ] 2020-05-10 18:32:14.024 [TestNG-tests-1] CucumberRunner - verifying entries
+[INFO ] 2020-05-10 18:32:14.036 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 18:32:14.071 [TestNG-tests-1] CucumberRunner - Navigating to Completed
+[INFO ] 2020-05-10 18:32:14.168 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 18:32:14.195 [TestNG-tests-1] CucumberRunner - verifying entries are hidden
+[INFO ] 2020-05-10 18:32:27.887 [TestNG-tests-1] CucumberRunner - Adding 10 entries
+[INFO ] 2020-05-10 18:32:28.994 [TestNG-tests-1] CucumberRunner - Navigating to Completed
+[INFO ] 2020-05-10 18:32:29.101 [TestNG-tests-1] CucumberRunner - verifying entries are hidden
+[INFO ] 2020-05-10 18:32:31.295 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 18:32:31.318 [TestNG-tests-1] CucumberRunner - Navigating to Active
+[INFO ] 2020-05-10 18:32:31.418 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 18:32:31.447 [TestNG-tests-1] CucumberRunner - verifying entries
+[INFO ] 2020-05-10 18:32:42.986 [TestNG-tests-1] CucumberRunner - Adding 50 entries
+[INFO ] 2020-05-10 18:32:47.838 [TestNG-tests-1] CucumberRunner - Striking prime elements from list
+[INFO ] 2020-05-10 18:32:48.746 [TestNG-tests-1] CucumberRunner - verifying prime entries are striked out
+[INFO ] 2020-05-10 18:33:00.594 [TestNG-tests-1] CucumberRunner - Adding 1 entries
+[INFO ] 2020-05-10 18:33:12.789 [TestNG-tests-1] CucumberRunner - Adding 2 entries
+[INFO ] 2020-05-10 18:33:13.010 [TestNG-tests-1] CucumberRunner - Verifying destroy CTA
+[INFO ] 2020-05-10 18:33:24.672 [TestNG-tests-1] CucumberRunner - Adding 50 entries
+[INFO ] 2020-05-10 18:33:31.118 [TestNG-tests-1] CucumberRunner - verifying 50 entries
+[INFO ] 2020-05-10 18:33:42.958 [TestNG-tests-1] CucumberRunner - entering text
+[INFO ] 2020-05-10 18:33:54.626 [TestNG-tests-1] CucumberRunner - Entering text for 50 seconds
+[INFO ] 2020-05-10 18:34:56.228 [TestNG-tests-1] CucumberRunner - clicking on link : TodoMVC
+[INFO ] 2020-05-10 18:34:58.321 [TestNG-tests-1] CucumberRunner - verifying page TodoMVC
+[INFO ] 2020-05-10 18:34:58.345 [TestNG-tests-1] CucumberRunner - Navigating to Back
+[INFO ] 2020-05-10 18:34:58.459 [TestNG-tests-1] CucumberRunner - clicking on link : let us know
+[INFO ] 2020-05-10 18:34:59.896 [TestNG-tests-1] CucumberRunner - verifying page Issues
+[INFO ] 2020-05-10 18:34:59.898 [TestNG-tests-1] CucumberRunner - Navigating to Back
+[INFO ] 2020-05-10 18:35:00.185 [TestNG-tests-1] CucumberRunner - opening link in new tab
+[INFO ] 2020-05-10 19:14:11.272 [TestNG-tests-1] CucumberRunner - Adding 10 entries
+[INFO ] 2020-05-10 19:14:13.719 [TestNG-tests-1] CucumberRunner - Navigating to Active
+[INFO ] 2020-05-10 19:14:14.000 [TestNG-tests-1] CucumberRunner - verifying entries
+[INFO ] 2020-05-10 19:14:14.032 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 19:14:14.124 [TestNG-tests-1] CucumberRunner - Navigating to Completed
+[INFO ] 2020-05-10 19:14:14.375 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 19:14:27.406 [TestNG-tests-1] CucumberRunner - Adding 10 entries
+[INFO ] 2020-05-10 19:14:29.760 [TestNG-tests-1] CucumberRunner - Navigating to Completed
+[INFO ] 2020-05-10 19:14:29.989 [TestNG-tests-1] CucumberRunner - verifying entries are hidden
+[INFO ] 2020-05-10 19:14:32.312 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 19:14:32.349 [TestNG-tests-1] CucumberRunner - Navigating to Active
+[INFO ] 2020-05-10 19:14:32.535 [TestNG-tests-1] CucumberRunner - verifying 10 entries
+[INFO ] 2020-05-10 19:14:32.588 [TestNG-tests-1] CucumberRunner - verifying entries
+[INFO ] 2020-05-10 19:14:45.059 [TestNG-tests-1] CucumberRunner - Adding 50 entries
+[INFO ] 2020-05-10 19:14:58.439 [TestNG-tests-1] CucumberRunner - Striking prime elements from list
+[INFO ] 2020-05-10 19:15:00.120 [TestNG-tests-1] CucumberRunner - verifying prime entries are striked out
+[INFO ] 2020-05-10 19:15:13.188 [TestNG-tests-1] CucumberRunner - Adding 1 entries
+[INFO ] 2020-05-10 19:15:28.261 [TestNG-tests-1] CucumberRunner - Adding 2 entries
+[INFO ] 2020-05-10 19:15:29.016 [TestNG-tests-1] CucumberRunner - Verifying destroy CTA
+[INFO ] 2020-05-10 19:15:41.982 [TestNG-tests-1] CucumberRunner - Adding 50 entries
+[INFO ] 2020-05-10 19:15:57.211 [TestNG-tests-1] CucumberRunner - verifying 50 entries
+[INFO ] 2020-05-10 19:16:09.961 [TestNG-tests-1] CucumberRunner - entering text
+[INFO ] 2020-05-10 19:16:22.808 [TestNG-tests-1] CucumberRunner - Entering text for 50 seconds

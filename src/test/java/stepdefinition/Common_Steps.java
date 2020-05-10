@@ -11,17 +11,11 @@ import pages.LanguagePage;
 
 
 public class Common_Steps {
-	private CucumberRunner cucumberrunner;
+	private CucumberRunner cucumberrunner=new CucumberRunner();
 	private LanguagePage languagepage=new LanguagePage();
-	
-	@Given("^I am on \"(.*?)\" page$")
-	public void verifyPageTitle(String text) throws Throwable {
-				Thread.sleep(1000);
-	}
-	
+
 	@Given("^I launch \"(.*?)\" page$")
-	public void launchURL(String url)  {
-			cucumberrunner=new CucumberRunner();
+	public void launchURL(String url)  {			
 			cucumberrunner.launchURL(url);
 	}
 	
