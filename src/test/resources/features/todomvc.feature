@@ -84,7 +84,7 @@ Feature: TODO MVC Functional Test cases
 			And I quit Browser
 	
 			@test1
-      Scenario: Verify Links should open on same page
+      Scenario: Destroying entries
 			Given I launch "http://www.todomvc.com/examples/backbone/" page
 			And I destroy "even" entries
 			
