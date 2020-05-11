@@ -1,6 +1,5 @@
 Feature: TODO MVC Functional Test cases
       
-     # Our Scenarios will begin from here. 
 		  @test1
       Scenario: Verify Toggle All Functionality
    		Given I launch "http://www.todomvc.com/examples/backbone/" page
@@ -70,7 +69,7 @@ Feature: TODO MVC Functional Test cases
 			When I enter text for "50" seconds and verify
 			
 		  @test1
-      Scenario: Verify Links should open on same page
+      Scenario: Verify Links
    		Given I launch "http://www.todomvc.com/examples/backbone/" page
 			When I click the link "TodoMVC"
 			Then I should see page "TodoMVC" on same tab
@@ -83,4 +82,9 @@ Feature: TODO MVC Functional Test cases
 			When I click the link "Backbone.js" for different window
 			Then I should see page "Backbone.js" on different window
 			And I quit Browser
+	
+			@test1
+      Scenario: Verify Links should open on same page
+			Given I launch "http://www.todomvc.com/examples/backbone/" page
+			And I destroy "even" entries
 			

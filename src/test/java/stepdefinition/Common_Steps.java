@@ -135,5 +135,9 @@ public class Common_Steps {
 		languagepage.verifyPage(link);
 	}
 	
-	
+	@When("^I destroy \"(.*?)\" entries$")
+	public void destroy(String number) throws InterruptedException, AWTException{
+		languagepage.destroy(number);
+	}
+
 }

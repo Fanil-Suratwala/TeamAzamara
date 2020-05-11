@@ -299,6 +299,52 @@ public class LanguagePage extends CucumberRunner{
 		robot.keyPress(KeyEvent.VK_DOWN); 
 		robot.keyPress(KeyEvent.VK_ENTER); 
 	}
-}
 
 
+	public void destroy(String type) throws InterruptedException {
+		int a=20;
+		int delCount=0;
+		Actions act=new Actions(driver);
+		
+		for(int i=0;i<a;i++){
+			todoPlaceholder.sendKeys(String.valueOf(i+1)+Keys.ENTER);
+		}
+		
+		if(type.equals("prime")){	
+			boolean flag=false;
+				for(int i=2;i<todoList.size();i++){
+					for(int j=2;j<i;j++){
+						if(i%j==0){
+							flag=false;
+							break;
+						}
+						else{
+							flag=true;
+						}
+					}
+					if(flag&&delCount<=(todoList.size()-i)){
+						List<WebElement> elem=driver.findElements(By.cssSelector(".destroy"));
+						act.moveToElement(todoList.get((i-1)-delCount)).build().perform();
+						Thread.sleep(1000);
+						act.moveToElement(elem.get((i-1)-delCount)).click().build().perform();
+						delCount++;
+					}
+				}
+				Thread.sleep(10000);
+			}
+		if(type.equals("even")){
+			for(int i=1;i<todoList.size();i++){
+				if(i%2==0){
+					if(delCount<=(todoList.size()-delCount)){
+						List<WebElement> elem=driver.findElements(By.cssSelector(".destroy"));
+						act.moveToElement(todoList.get((i-1)-delCount)).build().perform();
+						Thread.sleep(1000);
+						act.moveToElement(elem.get((i-1)-delCount)).click().build().perform();
+						delCount++;
+						}
+					}	
+				}
+			}
+		Thread.sleep(10000);
+		}
+	}
